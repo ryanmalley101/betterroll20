@@ -1,0 +1,124 @@
+.black-text {
+    color: black;
+    background-color: white;
+}
+
+.white-text {
+    color: white;
+    background-color: red;
+}
+
+.r {margin-right: 15px;}
+.l {margin-left: 15px;}
+.t {margin-top: 15px;}
+.b {margin-bottom: 15px;}
+
+.r2 {margin-right: 2px;}
+.r4 {margin-right: 4px;}
+.r10 {margin-right: 10px;}
+.l10 {margin-left: 10px;}
+
+.background {
+    /*width:375px;*/
+    /*height:525px;  */
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.title-row {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: row;
+}
+.title-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;    
+}
+
+.title-level {
+    line-height: 50px;
+    flex: 0 1 65px;
+    font-size: 36pt;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 15px;
+}
+
+.title-name {
+    height: 50px;
+    line-height:50px;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.title-subname {
+    height: 20px;
+    line-height:20px;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.properties {
+    flex: 0 1 100px;
+    text-align: center;
+}
+
+.property-row {
+    height: 50px;
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.property {
+    flex: 1;
+    height: 50px;
+    display: flex;
+}
+
+.icon {
+    flex: 0 1 50px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0ibTAsMGg1MTJ2NTEyaC01MTJ6IiBmaWxsPSIjZjAwIi8+CjxnIHRyYW5zZm9ybT0ibWF0cml4KDE4LjY4ODU4LDAsMCwxOC42ODg1OCwtMTE4MDIuNzI0NjgsLTMyNjc5LjUyODcyKSI+CjxwYXRoIGQ9Im02NDQuMTE1MywxNzQ5LjY0MDhjLTEuMzk1OS4xMjY2LTIuNzU4OC40NTc3LTQuMDA2NSwxLjAwNDcgLjgyMjUsMS43NTMxLjc2MTYsMy41Njk4LS4zNTg5LDQuNDA5OS0xLjExNDkuODM1Ny0yLjg5MjkuNDI3LTQuMzQxMy0uODM4Ny0uODY5MywxLjA0MDgtMS41Njk2LDIuMjEyNS0yLjA4LDMuNTEwOSAxLjgxMDEuNjU5OSAzLjAzMDUsMi4wMTUgMi44MzI3LDMuMzk3NHMtMS43NDkyLDIuMzQxMi0zLjY3MTcsMi40NjcxYy4xMjUxLDEuMzgwMy40NzU2LDIuNzE3MyAxLjAxMjIsMy45NTMyIC45NTMtLjQzNzggMS45MTU2LS41OTQzIDIuNzM0NC0uNDc5MiAuNjk3My4xIDEuMjgxMS4zNzU2IDEuNjY3OS44OTE1IC44NDYzLDEuMTI4OS40MDUxLDIuOTI4NS0uODk5Niw0LjM4NjkgMS4wNDQzLjg3NSAyLjI1OTcsMS41NzQ4IDMuNTY0MSwyLjA4NzcgLjY1OTgtMS44MTAxIDIuMDE0Ny0zLjAzMDYgMy4zOTc2LTIuODMyOHMyLjM0MTEsMS43NDkzIDIuNDY3LDMuNjcxOGMxLjM5NTktLjEyNjYgMi43NTg4LS40NTc1IDQuMDA2NS0xLjAwNDYtLjg0MzYtMS43NjU2LS43NjI3LTMuNjE2OC4zNjY1LTQuNDYzMiAuNTE1OC0uMzg2OCAxLjIwNzItLjQ4MTkgMS45MDQyLS4zODA0IC44MDg2LjExNTYgMS42NjguNTQ4NiAyLjQzNzEsMS4yMTkxIC44NjA5LTEuMDM1MSAxLjU3My0yLjIyMjEgMi4wOC0zLjUxMDgtMS44MTAxLS42NTk5LTMuMDMwNS0yLjAxNDctMi44MzI3LTMuMzk3N3MxLjc0OTItMi4zNDEgMy42NzE3LTIuNDY2OWMtLjEyNjItMS4zODgzLS40Ny0yLjcxMTMtMS4wMTIyLTMuOTUzMy0xLjc0NS44MDg5LTMuNTY2NC43MDI2LTQuNDAyMy0uNDEyMS0uODM5OS0xLjEyMDYtLjM4OS0yLjg4MTQuODkyLTQuMzMzNy0xLjA0NDQtLjg3NDktMi4yNTk3LTEuNTc0OS0zLjU2NDEtMi4wODc4LS42NTk4LDEuODEwMS0yLjAxNDcsMy4wMzA0LTMuMzk3NiwyLjgzMjhzLTIuMzQxMi0xLjc0OTMtMi40NjctMy42NzE4eiIgZmlsbD0iI2ZmZiIvPgo8cGF0aCBkPSJtNjQ5LjQ0NDEsMTc2NS4zNjU2YzAsMS45NzUxLTEuNjAxMiwzLjU3NjMtMy41NzYzLDMuNTc2M3MtMy41NzYzLTEuNjAxMi0zLjU3NjMtMy41NzYzIDEuNjAxMi0zLjU3NjMgMy41NzYzLTMuNTc2MyAzLjU3NjMsMS42MDEyIDMuNTc2MywzLjU3NjN6IiB0cmFuc2Zvcm09Im1hdHJpeCgxLjY1NTE2LDAsMCwxLjY1NTE2LC00MjMuNzM4ODcsLTExNTkuNTAyNykiIGZpbGw9IiNmMDAiLz4KPHBhdGggZD0ibTY1Mi4wODQ4LDE3NjMuNTg2M2MwLDMuOTkwNC0zLjIzNDgsNy4yMjUyLTcuMjI1Miw3LjIyNTJzLTcuMjI1Mi0zLjIzNDgtNy4yMjUyLTcuMjI1MiAzLjIzNDgtNy4yMjUyIDcuMjI1Mi03LjIyNTIgNy4yMjUyLDMuMjM0OSA3LjIyNTIsNy4yMjUyeiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjAwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSguNDE0NiwtMS4xMzAzKSIvPgo8L2c+Cjwvc3ZnPg==);
+}
+
+.property-text {
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+}
+
+.property-text2 {
+    flex: 1;
+    text-align: center;
+    line-height: 25px;
+}
+
+.content {
+    flex: 1;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.footer {  
+    flex: 0 1 40px;
+    display: flex;
+    line-height: 40px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: start;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: end;
+}

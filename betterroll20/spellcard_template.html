@@ -1,0 +1,67 @@
+<head>        
+    <link href="css/spellcard.css" rel="stylesheet" />
+    <script src="js/spellcard.js"></script>
+    <script src="js/vendor/jquery-3.1.0.js"></script>
+</head>
+<div class="background">
+    <div class="title-row l t b r">
+        <!--
+        <div class="title-level white-text">
+            1
+        </div>
+        -->
+        <div class="title-right">
+            <div class="title-name black-text" id="spell-name">
+                Burning Hands
+            </div>
+        </div>
+    </div>
+    <div class="properties l r b">
+        <div class="property-row">
+            <div class="property r2">
+                <div class="r10 icon"></div>
+                <div class="property-text2  black-text" id="spell-casttime">
+                    1 action<br />
+                    Ritual (10min)
+                </div>
+            </div>
+            <div class="property">
+                <div class="property-text2  black-text" id="spell-range">
+                    Self<br />
+                    (15ft cone)
+                </div>  
+                <div class="l10 icon"></div>
+            </div>
+        </div>
+        <div class="property-row">
+            <div class="property r2">
+                <div class="r10 icon"></div>
+                <div class="property-text2 black-text" id="spell-components">
+                V, S
+                </div>
+            </div>
+            <div class="property">
+                <div class="property-text2 black-text" id="spell-duration">
+                    Concentration<br />
+                    Up to 10min
+                </div>   
+                <div class="l10 icon"></div>
+            </div>
+        </div>
+    </div>
+    <div class="content l r black-text" id="spell-desc">
+        Each creature in a 15-foot cone must make a <b>Dexterity saving throw</b>.
+        A creature  takes <b>3d6 fire damage</b> on a failed save, or half as much damage on a successful one.
+        <br />
+        <br />
+        The fire ignites any flammable objects in the area that
+        aren’t being worn or carried.
+        <br />
+        <br />
+        <b>At Higher Levels</b>. The damage increases by 1d6 for each slot level above 1st.
+    </div>
+    <div class="footer white-text">
+        <div class="l footer-left" id="spell-class"></div>
+        <div class="r footer-right" id="spell-level">Evocation 1</div>
+    </div>
+</div>

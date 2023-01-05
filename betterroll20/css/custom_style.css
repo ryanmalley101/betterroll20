@@ -1,0 +1,239 @@
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100%;
+  height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  /*padding: 0.875rem 1.25rem;*/
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  /*width: 10rem;*/
+}
+
+#tab-srd {
+  height: 100vh;
+  overflow-y:auto;
+}
+
+#page-content-wrapper {
+  outline: .01em solid black;
+  width: 70vw;
+  height:  100vh;
+  flex-direction: column;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    width: 20rem;
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+#chatbox {
+  list-style-type: none;
+  position: relative;
+  flex-direction: column-reverse;
+  overflow-y: scroll;
+  /*height: 100vh;*/
+}
+
+.chatlist {
+  list-style-type: none;
+  position: relative;
+  padding-left: 0px;
+  padding-inline-start: 0px;
+  /*flex-direction: column-reverse;*/
+  /*overflow-y: scroll;*/
+}
+
+
+#rightbar-wrapper {
+  outline: .01em solid black;
+  width: 300px;
+  height: 100vh;
+  z-index: 9;
+}
+
+.chatbox {width:100%; overflow: auto; outline: 2px black}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.row            {
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+}
+.column {
+  -webkit-flex-direction: column;
+  float: left;
+}
+.column li {
+  background: deepskyblue;
+}
+.flex-item {
+  /*padding: 2px;*/
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+.container-canvas {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  /*width: 70vw;*/
+  height: 90vh;
+  z-index: 0;
+
+}
+
+.dragcharsheet {
+  position: relative;
+  left: 1000px;
+  top:  1000px;
+  width: 819px;
+  height: 700px;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+.dragspellcard {
+  width: 400px;
+  height: 500px;
+}
+/*#dragcharsheetheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}*/
+
+.panel{
+  background-color: #ffffff;
+}
+
+.panel-heading{
+  min-height: 25px;
+  background-color: #f1f1f1;
+}
+
+#panel1{
+  left: 300px
+}
+
+.resizable{
+  overflow: hidden;
+  resize: both
+}
+
+.draggable{
+  position: absolute;
+  z-index: 100
+}
+.draggable-handler{
+  cursor: pointer
+}
+.dragging{
+  cursor: move;
+  z-index: 200 !important
+}
+
+iframe {
+  width: 100%;
+  height:100%;
+}
+
+li.messageItem {
+  padding-left: 0px;
+  padding-inline-start: 0px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+/*  border: 1px solid #ccc;
+  border-top: none;*/
+}
+
+.tab-icon {
+  width: 25px;
+  height:  25px;
+}
+
+.btn-secondary {
+  margin-top:  10px;
+}
+
+.srd-list {
+  list-style-type: none;
+}
